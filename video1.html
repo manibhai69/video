@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>My Video Page</title>
+
+  <!-- Twitter Player Card Meta Tags -->
+  <meta name="twitter:card" content="player" />
+  <meta name="twitter:site" content="@your_twitter_handle" />
+  <meta name="twitter:title" content="Watch My Cool Video" />
+  <meta name="twitter:description" content="Enjoy this awesome video directly in Twitter." />
+  <meta name="twitter:image" content="https://video-site-yourname.vercel.app/thumb.jpg" />
+  <meta name="twitter:player" content="https://video-site-yourname.vercel.app/video1.html" />
+  <meta name="twitter:player:width" content="1280" />
+  <meta name="twitter:player:height" content="720" />
+  <meta name="twitter:player:stream" content="https://video-site-yourname.vercel.app/video.mp4" />
+  <meta name="twitter:player:stream:content_type" content="video/mp4" />
+
+  <style>
+    body {
+      margin: 0;
+      background: #000;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+    video {
+      width: 100%;
+      max-width: 800px;
+      height: auto;
+    }
+  </style>
+</head>
+<body>
+  <video controls autoplay muted playsinline>
+    <source src="video.mp4" type="video/mp4" />
+    Your browser does not support the video tag.
+  </video>
+</body>
+</html>
